@@ -45,3 +45,9 @@ To create a new Multi-Question Challenge, follow these steps:
 2. View
    
 <img width="472" alt="image" src="https://github.com/user-attachments/assets/0b3e1681-a123-411e-a60e-92b1bb58515e" />
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+This plugin is a derivative work based on [CTFd](https://github.com/CTFd/CTFd), which is also licensed under the Apache License 2.0.
