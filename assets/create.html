@@ -1,0 +1,67 @@
+{% extends "admin/challenges/create.html" %}
+
+{% block header %}
+<div class="alert alert-secondary" role="alert">
+	Sub Question Challenges are a type of challenge that allows you to create a challenge with multiple questions and flags.<br>
+	Each question is worth a certain number of points, and the challenge is considered solved when all questions are answered correctly.<br>
+	You can also set a maximum number of attempts for each question.<br>
+	By HITCON ReCTF Team.
+</div>
+{% endblock %}
+
+{% block connection_info %}
+<div class="form-group">
+	<label for="connection_info">Connection Info</label>
+	<textarea class="form-control" name="connection_info" rows="3" placeholder="Connection information (optional)"></textarea>
+</div>
+{% endblock %}
+
+{% block max_attempts %}
+<div class="form-group">
+	<label for="max_attempts">Max Attempts</label>
+	<input type="number" class="form-control" name="max_attempts" value="0" placeholder="0 for unlimited">
+</div>
+{% endblock %}
+
+{% block value %}
+<!-- Multi Question Section -->
+<div class="card">
+	<div class="card-header">
+		<h5 class="card-title">Questions & Flags</h5>
+	</div>
+	<div class="card-body">
+		<div id="questions-container">
+			<div class="question-item border p-3 mb-3" data-question="1">
+				<div class="form-group">
+					<label>Question 1</label>
+					<textarea class="form-control question-text" name="question_1" rows="3" placeholder="Enter question text" required></textarea>
+				</div>
+				<div class="form-group">
+					<label>Flag 1</label>
+					<input type="text" class="form-control question-flag" name="flag_1" placeholder="Enter flag" required>
+				</div>
+				<div class="form-group">
+					<label>Points</label>
+					<input type="number" class="form-control question-points" name="points_1" value="100" min="1" required>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn btn-success" id="add-question">Add Question</button>
+		<button type="button" class="btn btn-danger" id="remove-question" style="display: none;">Remove Last Question</button>
+	</div>
+</div>
+{% endblock %}
+
+{% block state %}
+<div class="form-group">
+	<label for="state">State</label>
+	<select class="form-control" name="state">
+		<option value="visible" selected>Visible</option>
+		<option value="hidden">Hidden</option>
+	</select>
+</div>
+{% endblock %}
+
+{% block type %}
+<input type="hidden" value="multiquestionchallenge" name="type" id="chaltype">
+{% endblock %} 
