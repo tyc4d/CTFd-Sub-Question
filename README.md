@@ -35,4 +35,10 @@ To create a new Multi-Question Challenge, follow these steps:
     -   For each question, you must provide the **Question Text**, the correct **Flag**, and the **Points** awarded for solving it.
 6.  Use the "Add Question" and "Remove Last Question" buttons to manage the list of questions. You must have at least one question.
 7.  Set the challenge **State** to "Visible" if you want it to be immediately available to users.
-8.  Click the "Create" button to save the challenge. 
+8.  Click the "Create" button to save the challenge.
+
+## Demo
+1. Create 
+<img width="874" alt="image" src="https://github.com/user-attachments/assets/505bf914-a2a9-42f8-97a0-ae4cc4e24c30" />
+2. View
+<img width="472" alt="image" src="https://github.com/user-attachments/assets/0b3e1681-a123-411e-a60e-92b1bb58515e" />
