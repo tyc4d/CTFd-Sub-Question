@@ -20,7 +20,10 @@ This is ideal for scenarios where a single task or artifact (e.g., a file to ana
 ## Installation
 
 1.  Clone this repository or download the source code.
-2.  Place the `multiquestionchallenge` directory into the `CTFd/plugins/` directory of your CTFd instance.
+
+```git clone https://github.com/tyc4d/CTFd-Sub-Question/ subquestionchallenge```
+
+2.  Place the `subquestionchallenge` directory into the `CTFd/plugins/` directory of your CTFd instance.
 3.  Restart the CTFd application.
 
 ## Usage
